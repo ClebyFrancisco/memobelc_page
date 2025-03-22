@@ -1,0 +1,43 @@
+:root {
+  --color-main: #219ae7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Concert One", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.mobiles {
+  background-image: url("./assets/mobiles.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.problem {
+  background-image: url("./assets/fundo1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.problem2 {
+  background-image: url("./assets/fundo2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
