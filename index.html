@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Memobelc é uma plataforma que transforma o aprendizado com o poder da repetição espaçada e da IA."
+    />
+    <meta
+      name="keywords"
+      content="Flashcards, memobelc, repetição espaçada, anki, memorização, memoria, esquece, decks, cards"
+    />
+    <meta name="author" content="Memobelc" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta name="author" content="Memobelc" />
+    <title>Memobelc - Aprendizado inteligente que evolui com você!</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-main: #219ae7;
+      }
+    </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+      body {
+        font-family: "Concert One", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      .container {
+        max-width: 1400px;
+        margin: auto;
+        padding: 20px;
+      }
+      .mobiles {
+        background-image: url("./assets/mobiles.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .problem {
+        background-image: url("./assets/fundo1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .problem2 {
+        background-image: url("./assets/fundo2.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-main w-full p-0 m-0">
+      <div class="container flex flex-col md:flex-row">
+        <div
+          class="w-full md:w-[50%] h-full flex flex-col justify-center items-center"
+        >
+          <img src="./assets/logo.png" class="w-40" alt="memobelc" />
+          <h1 class="sr-only">Memobelc</h1>
+          <h2 class="text-[25px] md:text-[35px] text-white">
+            Aprendizado inteligente que evolui com você!
+          </h2>
+        </div>
+        <div class="mobiles w-full h-50 md:h-100 md:w-[50%]">
+          <img
+            src="./assets/mobiles.png"
+            class="sr-only"
+            alt="Memobelc home screen"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="problem w-full h-100 md:h-170 flex items-center">
+      <div class="container flex items-center justify-center">
+        <p class="text-main text-[20px] md:text-[35px]">
+          Nosso cérebro descarta informações que não são revisadas corretamente.
+          Sem um método eficiente, tudo o que estudamos simplesmente some da
+          nossa memória!
+        </p>
+      </div>
+    </section>
+    <section class="problem2 w-full h-100 md:h-170 flex items-center">
+      <div class="container flex items-center justify-center">
+        <p class="text-main text-[20px] md:text-[35px]">
+          Você já sentiu que <span class="text-red-500">esquece</span> tudo o
+          que estudou?
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
