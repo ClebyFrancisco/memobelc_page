@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Links</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #219ae7;
+        font-family: Arial, sans-serif;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .logo {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .logo img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      .links {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .btn {
+        position: relative;
+        background-color: #ffde59;
+        border: none;
+        padding: 15px 30px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        box-shadow: 4px 4px 0 #000;
+        transition: transform 0.1s ease;
+      }
+
+      .btn:active {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 #000;
+      }
+
+      @media (max-width: 480px) {
+        .btn {
+          font-size: 14px;
+          padding: 12px 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./assets/logo_memobelc.png" alt="Logo" />
+    </div>
+
+    <div class="links">
+      <a href="#" class="btn"></a>
+      <a href="#" class="btn"></a>
+      <a href="#" class="btn"></a>
+      <a href="#" class="btn"></a>
+
+      <script>
+        function detectDevice() {
+          const userAgent =
+            navigator.userAgent || navigator.vendor || window.opera;
+
+          if (/iPhone|iPad|iPod/i.test(userAgent)) {
+            return "Mobile Apple (iOS)";
+          }
+
+          if (/Android/i.test(userAgent)) {
+            return "Mobile Android";
+          }
+
+          return "Desktop";
+        }
+
+        const tipoDispositivo = detectDevice();
+        alert(tipoDispositivo);
+      </script>
+    </div>
+  </body>
+</html>
